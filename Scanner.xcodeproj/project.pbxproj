@@ -18,6 +18,7 @@
 		66EA499E2C77A3EA006C8CD3 /* Commissioner-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66EA499D2C77A3EA006C8CD3 /* Commissioner-Bold.ttf */; };
 		66EA49A12C77A781006C8CD3 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA49A02C77A781006C8CD3 /* Font.swift */; };
 		66EA49A32C77A87B006C8CD3 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA49A22C77A87B006C8CD3 /* Color.swift */; };
+		66EA49A62C77AF7C006C8CD3 /* UILauncScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66EA49A52C77AF7C006C8CD3 /* UILauncScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		66EA499F2C77A694006C8CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		66EA49A02C77A781006C8CD3 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		66EA49A22C77A87B006C8CD3 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		66EA49A52C77AF7C006C8CD3 /* UILauncScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UILauncScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +113,8 @@
 				668777C82C779FB400EC905A /* Assets.xcassets */,
 				668777CA2C779FB400EC905A /* Scanner.entitlements */,
 				668777CB2C779FB400EC905A /* Preview Content */,
-				66EA499A2C77A398006C8CD3 /* Assets */,
+				66EA499A2C77A398006C8CD3 /* Fonts */,
+				66EA49A52C77AF7C006C8CD3 /* UILauncScreen.storyboard */,
 			);
 			path = Scanner;
 			sourceTree = "<group>";
@@ -141,13 +144,13 @@
 			path = ScannerUITests;
 			sourceTree = "<group>";
 		};
-		66EA499A2C77A398006C8CD3 /* Assets */ = {
+		66EA499A2C77A398006C8CD3 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				66EA499D2C77A3EA006C8CD3 /* Commissioner-Bold.ttf */,
 				66EA499B2C77A3D2006C8CD3 /* Commissioner-Medium.ttf */,
 			);
-			path = Assets;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		66EA49A42C77A942006C8CD3 /* Extention */ = {
@@ -266,6 +269,7 @@
 				66EA499C2C77A3D2006C8CD3 /* Commissioner-Medium.ttf in Resources */,
 				668777CD2C779FB400EC905A /* Preview Assets.xcassets in Resources */,
 				668777C92C779FB400EC905A /* Assets.xcassets in Resources */,
+				66EA49A62C77AF7C006C8CD3 /* UILauncScreen.storyboard in Resources */,
 				66EA499E2C77A3EA006C8CD3 /* Commissioner-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +470,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = UILauncScreen.storyboard;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -506,6 +511,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = UILauncScreen.storyboard;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

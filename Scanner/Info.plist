@@ -4,8 +4,12 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Commissioner-Medium.ttf</string>
-		<string>Commissioner-Bold.ttf</string>
+		<string></string>
 	</array>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIImageName</key>
+		<string></string>
+	</dict>
 </dict>
 </plist>
