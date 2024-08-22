@@ -16,6 +16,13 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onAppear(perform: {
+            UIFont.familyNames.forEach({ familyName in
+            let fontNames = UIFont.fontNames(forFamilyName: familyName)
+            print(familyName, fontNames)
+            })
+        })
+
     }
 }
 
