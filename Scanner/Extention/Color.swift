@@ -10,7 +10,7 @@ import SwiftUI
 extension Color {
     static let gradientColor1 = Color(hex: 0x6CD3FF)
     static let gradientColor2 = Color(hex: 0x555CFF)
-    static let titleColor = Color(hex: 0x5661FF)
+    static let titleColor = Color(hex: 0x6A79B7)
 }
 
 extension Color {

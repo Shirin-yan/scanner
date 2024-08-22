@@ -8,6 +8,8 @@
 import SwiftUI
 
 extension Font {
-    static let title =  Font.custom("Commissioner-Bold", size: 30)
-    static let body =  Font.custom("Commissioner-Medium", size: 20)
+    static let bold_30 =  Font.custom("Commissioner-Bold", size: 30)
+    static let bold_12 =  Font.custom("Commissioner-Bold", size: 12)
+    
+    static let med_20 =  Font.custom("Commissioner-Medium", size: 20)
 }

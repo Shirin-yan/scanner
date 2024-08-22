@@ -19,6 +19,7 @@
 		66EA49A12C77A781006C8CD3 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA49A02C77A781006C8CD3 /* Font.swift */; };
 		66EA49A32C77A87B006C8CD3 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA49A22C77A87B006C8CD3 /* Color.swift */; };
 		66EA49A62C77AF7C006C8CD3 /* UILauncScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66EA49A52C77AF7C006C8CD3 /* UILauncScreen.storyboard */; };
+		66EA49A82C77B196006C8CD3 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA49A72C77B196006C8CD3 /* LandingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		66EA49A02C77A781006C8CD3 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		66EA49A22C77A87B006C8CD3 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		66EA49A52C77AF7C006C8CD3 /* UILauncScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UILauncScreen.storyboard; sourceTree = "<group>"; };
+		66EA49A72C77B196006C8CD3 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				66EA49A42C77A942006C8CD3 /* Extention */,
 				668777C42C779FB400EC905A /* ScannerApp.swift */,
 				668777C62C779FB400EC905A /* ContentView.swift */,
+				66EA49A72C77B196006C8CD3 /* LandingView.swift */,
 				668777C82C779FB400EC905A /* Assets.xcassets */,
 				668777CA2C779FB400EC905A /* Scanner.entitlements */,
 				668777CB2C779FB400EC905A /* Preview Content */,
@@ -296,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				668777C72C779FB400EC905A /* ContentView.swift in Sources */,
+				66EA49A82C77B196006C8CD3 /* LandingView.swift in Sources */,
 				66EA49A32C77A87B006C8CD3 /* Color.swift in Sources */,
 				668777C52C779FB400EC905A /* ScannerApp.swift in Sources */,
 				66EA49A12C77A781006C8CD3 /* Font.swift in Sources */,

@@ -1,0 +1,83 @@
+//
+//  LandingView.swift
+//  Scanner
+//
+//  Created by Shirin-Yan on 22.08.2024.
+//
+
+import SwiftUI
+
+struct LandingView: View {
+    var body: some View {
+        VStack {
+            Image("gradient-bg")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(maxWidth: .infinity)
+                .ignoresSafeArea()
+            
+            Spacer()
+
+            VStack(spacing: 20) {
+                LinearGradient(
+                    colors: [.gradientColor1, .gradientColor2],
+                    startPoint: .leading,
+                    endPoint: .trailing
+                ).mask(
+                    Text("Portable application.")
+                        .font(.bold_30)
+                        .multilineTextAlignment(.center)
+                ).frame(maxHeight: 40)
+
+                Text("Take it with you everywhere!")
+                    .font(.med_20)
+                    .foregroundColor(.titleColor)
+                    .multilineTextAlignment(.center)
+            }
+            
+            Spacer()
+            
+            Spacer()
+            
+            Button{
+                
+            } label: {
+                Text("NEXT")
+                    .font(.med_20)
+                    .foregroundColor(.white)
+                    .frame(maxWidth: .infinity)
+                    .padding(.all, 14)
+                    .background(LinearGradient(
+                        colors: [.gradientColor1, .gradientColor2],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    ))
+                    .cornerRadius(30)
+                    .padding()
+            }
+            
+            HStack {
+                Link(destination: URL(string: "https://www.apple.com/legal/privacy/en-ww/")!, label: {
+                    Text("Terms of Service")
+                        .font(.bold_12)
+                        .foregroundColor(.titleColor)
+                })
+                
+                Rectangle()
+                    .fill(Color.titleColor)
+                    .frame(width: 1, height: 16)
+                
+                Link(destination: URL(string: "https://www.apple.com/legal/internet-services/terms/site.html")!, label: {
+                    Text("Privacy Policy")
+                        .font(.bold_12)
+                        .foregroundColor(.titleColor)
+                })
+            }
+        }
+
+    }
+}
+
+#Preview {
+    LandingView()
+}

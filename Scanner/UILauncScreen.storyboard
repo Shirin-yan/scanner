@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient-bg" translatesAutoresizingMaskIntoConstraints="NO" id="cu3-Wz-Hm8">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient-bg" translatesAutoresizingMaskIntoConstraints="NO" id="cu3-Wz-Hm8">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="902"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="YuG-u7-Vfi">
                                 <rect key="frame" x="60" y="370.33333333333331" width="273" height="111.33333333333331"/>
@@ -30,7 +30,7 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="cu3-Wz-Hm8" secondAttribute="bottom" id="5IJ-bD-tA1"/>
+                            <constraint firstAttribute="bottom" secondItem="cu3-Wz-Hm8" secondAttribute="bottom" constant="-50" id="5IJ-bD-tA1"/>
                             <constraint firstItem="YuG-u7-Vfi" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="IT0-ek-guC"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YuG-u7-Vfi" secondAttribute="trailing" constant="60" id="Ov9-Xw-Zv3"/>
                             <constraint firstAttribute="trailing" secondItem="cu3-Wz-Hm8" secondAttribute="trailing" id="XoF-mW-r9S"/>
@@ -47,7 +47,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gradient-bg" width="430" height="932"/>
+        <image name="gradient-bg" width="438" height="386"/>
         <image name="logo" width="243" height="53"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
