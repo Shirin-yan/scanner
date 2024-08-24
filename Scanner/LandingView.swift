@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LandingView: View {
+    @EnvironmentObject var coordinator: Coordinator
+    
     @State var isScannerPresented = false
     
     var body: some View {

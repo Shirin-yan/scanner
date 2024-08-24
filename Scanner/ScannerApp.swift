@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct ScannerApp: App {
+    @StateObject var coordinator = Coordinator()
+    
     var body: some Scene {
         WindowGroup {
-            LandingView()
+            NavigationStack(path: $coordinator.path){
+                LandingView()
+                    .navigationDestination(for: Page.self) { page in
+                        coordinator.view(for: page)
+                    }
+            }.environmentObject(coordinator)
         }
     }
 }
