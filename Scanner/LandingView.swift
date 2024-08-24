@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LandingView: View {
+    @State var isScannerPresented = false
+    
     var body: some View {
         VStack {
             Image("gradient-bg")
@@ -40,7 +42,7 @@ struct LandingView: View {
             Spacer()
             
             Button{
-                
+                isScannerPresented.toggle()
             } label: {
                 Text("NEXT")
                     .font(.med_20)
@@ -73,6 +75,10 @@ struct LandingView: View {
                         .foregroundColor(.titleColor)
                 })
             }
+        }.fullScreenCover(isPresented: $isScannerPresented) {
+            DocumentScannerView(isPresented: $isScannerPresented) { scannedImgs in
+                print(scannedImgs)
+            }.ignoresSafeArea()
         }
 
     }

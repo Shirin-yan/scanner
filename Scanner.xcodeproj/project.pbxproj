@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		668777C52C779FB400EC905A /* ScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668777C42C779FB400EC905A /* ScannerApp.swift */; };
-		668777C72C779FB400EC905A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668777C62C779FB400EC905A /* ContentView.swift */; };
 		668777C92C779FB400EC905A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668777C82C779FB400EC905A /* Assets.xcassets */; };
 		668777CD2C779FB400EC905A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668777CC2C779FB400EC905A /* Preview Assets.xcassets */; };
 		668777D72C779FB500EC905A /* ScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668777D62C779FB500EC905A /* ScannerTests.swift */; };
@@ -20,6 +19,7 @@
 		66EA49A32C77A87B006C8CD3 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA49A22C77A87B006C8CD3 /* Color.swift */; };
 		66EA49A62C77AF7C006C8CD3 /* UILauncScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66EA49A52C77AF7C006C8CD3 /* UILauncScreen.storyboard */; };
 		66EA49A82C77B196006C8CD3 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA49A72C77B196006C8CD3 /* LandingView.swift */; };
+		66EA49AC2C783A70006C8CD3 /* DocScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA49AB2C783A70006C8CD3 /* DocScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,6 @@
 /* Begin PBXFileReference section */
 		668777C12C779FB400EC905A /* Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		668777C42C779FB400EC905A /* ScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerApp.swift; sourceTree = "<group>"; };
-		668777C62C779FB400EC905A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		668777C82C779FB400EC905A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		668777CA2C779FB400EC905A /* Scanner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scanner.entitlements; sourceTree = "<group>"; };
 		668777CC2C779FB400EC905A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -58,6 +57,7 @@
 		66EA49A22C77A87B006C8CD3 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		66EA49A52C77AF7C006C8CD3 /* UILauncScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UILauncScreen.storyboard; sourceTree = "<group>"; };
 		66EA49A72C77B196006C8CD3 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		66EA49AB2C783A70006C8CD3 /* DocScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +111,8 @@
 				66EA499F2C77A694006C8CD3 /* Info.plist */,
 				66EA49A42C77A942006C8CD3 /* Extention */,
 				668777C42C779FB400EC905A /* ScannerApp.swift */,
-				668777C62C779FB400EC905A /* ContentView.swift */,
 				66EA49A72C77B196006C8CD3 /* LandingView.swift */,
+				66EA49AB2C783A70006C8CD3 /* DocScannerView.swift */,
 				668777C82C779FB400EC905A /* Assets.xcassets */,
 				668777CA2C779FB400EC905A /* Scanner.entitlements */,
 				668777CB2C779FB400EC905A /* Preview Content */,
@@ -298,9 +298,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				668777C72C779FB400EC905A /* ContentView.swift in Sources */,
 				66EA49A82C77B196006C8CD3 /* LandingView.swift in Sources */,
 				66EA49A32C77A87B006C8CD3 /* Color.swift in Sources */,
+				66EA49AC2C783A70006C8CD3 /* DocScannerView.swift in Sources */,
 				668777C52C779FB400EC905A /* ScannerApp.swift in Sources */,
 				66EA49A12C77A781006C8CD3 /* Font.swift in Sources */,
 			);
@@ -468,6 +468,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Scanner/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need access to camera to scan the documents ";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -509,6 +510,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Scanner/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need access to camera to scan the documents ";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
