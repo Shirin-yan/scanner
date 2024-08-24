@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-enum Page: Hashable {
-    case cropper(images: [UIImage])
-    case filter(images: [UIImage])
-    case export(images: [UIImage])
-}
-
 class Coordinator: ObservableObject {
     @Published var path = NavigationPath()
     
@@ -20,7 +14,7 @@ class Coordinator: ObservableObject {
     func view(for page: Page) -> some View {
         switch page {
         case .cropper(let images):
-            CropperView()
+            CropperView(images: images)
         case .filter(let images):
             FilterView()
         case .export(let images):
@@ -32,7 +26,7 @@ class Coordinator: ObservableObject {
         path.append(page)
     }
 
-    func navigateBack(tab: Int) {
+    func navigateBack() {
         path.removeLast()
     }
     

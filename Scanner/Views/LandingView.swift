@@ -43,21 +43,8 @@ struct LandingView: View {
             
             Spacer()
             
-            Button{
+            PrimaryBtnView(title: "NEXT") {
                 isScannerPresented.toggle()
-            } label: {
-                Text("NEXT")
-                    .font(.med_20)
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity)
-                    .padding(.all, 14)
-                    .background(LinearGradient(
-                        colors: [.gradientColor1, .gradientColor2],
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    ))
-                    .cornerRadius(30)
-                    .padding()
             }
             
             HStack {
@@ -79,7 +66,9 @@ struct LandingView: View {
             }
         }.fullScreenCover(isPresented: $isScannerPresented) {
             DocumentScannerView(isPresented: $isScannerPresented) { scannedImgs in
-                print(scannedImgs)
+                if !scannedImgs.isEmpty {
+                    coordinator.navigateTo(.cropper(images: scannedImgs))
+                }
             }.ignoresSafeArea()
         }
 
