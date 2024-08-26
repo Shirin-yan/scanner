@@ -18,7 +18,7 @@ class Coordinator: ObservableObject {
         case .filter(let images):
             FilterView(images: images)
         case .export(let images):
-            ExportView()
+            ExportView(images: images)
         }
     }
     
@@ -30,7 +30,7 @@ class Coordinator: ObservableObject {
         path.removeLast()
     }
     
-    func popToRoot(tab: Int) {
-        path.removeLast(path.count-1)
+    func popToRoot() {
+        path = NavigationPath()
     }
 }

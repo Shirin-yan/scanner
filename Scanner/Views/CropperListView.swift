@@ -44,6 +44,7 @@ struct CropperListView: View {
                 CropperView(image: images[selectedImg]) { croppedImg in
                     images[selectedImg] = croppedImg
                 }.ignoresSafeArea()
+                    .id(selectedImg)
             }
     }
 }
