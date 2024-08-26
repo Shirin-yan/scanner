@@ -12,4 +12,5 @@ extension Font {
     static let bold_12 =  Font.custom("Commissioner-Bold", size: 12)
     
     static let med_20 =  Font.custom("Commissioner-Medium", size: 20)
+    static let med_16 =  Font.custom("Commissioner-Medium", size: 16)
 }

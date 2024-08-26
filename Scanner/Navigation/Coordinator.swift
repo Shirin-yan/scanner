@@ -16,7 +16,7 @@ class Coordinator: ObservableObject {
         case .cropper(let images):
             CropperListView(images: images)
         case .filter(let images):
-            FilterView()
+            FilterView(images: images)
         case .export(let images):
             ExportView()
         }

@@ -45,7 +45,7 @@ struct LandingView: View {
             
             PrimaryBtnView(title: "NEXT") {
                 isScannerPresented.toggle()
-            }
+            }.padding()
             
             HStack {
                 Link(destination: URL(string: "https://www.apple.com/legal/privacy/en-ww/")!, label: {
