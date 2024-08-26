@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		66081BC52C79BA330059A37E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66081BC42C79BA330059A37E /* Coordinator.swift */; };
 		66081BC72C79BB420059A37E /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66081BC62C79BB420059A37E /* FilterView.swift */; };
-		66081BC92C79BB4E0059A37E /* CropperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66081BC82C79BB4E0059A37E /* CropperView.swift */; };
+		66081BC92C79BB4E0059A37E /* CropperListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66081BC82C79BB4E0059A37E /* CropperListView.swift */; };
 		66081BCB2C79BB710059A37E /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66081BCA2C79BB710059A37E /* ExportView.swift */; };
 		66081BCD2C79BD4D0059A37E /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66081BCC2C79BD4D0059A37E /* Page.swift */; };
 		66081BD22C79CD700059A37E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66081BD12C79CD700059A37E /* HeaderView.swift */; };
 		662F1A712C79D1DE005A9367 /* PrimaryBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662F1A702C79D1DE005A9367 /* PrimaryBtnView.swift */; };
+		662F1A772C79DFFA005A9367 /* CropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 662F1A762C79DFFA005A9367 /* CropViewController */; };
+		662F1A792C79DFFA005A9367 /* TOCropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 662F1A782C79DFFA005A9367 /* TOCropViewController */; };
 		668777C52C779FB400EC905A /* ScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668777C42C779FB400EC905A /* ScannerApp.swift */; };
 		668777C92C779FB400EC905A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668777C82C779FB400EC905A /* Assets.xcassets */; };
 		668777CD2C779FB400EC905A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668777CC2C779FB400EC905A /* Preview Assets.xcassets */; };
@@ -27,6 +29,7 @@
 		66EA49A62C77AF7C006C8CD3 /* UILauncScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66EA49A52C77AF7C006C8CD3 /* UILauncScreen.storyboard */; };
 		66EA49A82C77B196006C8CD3 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA49A72C77B196006C8CD3 /* LandingView.swift */; };
 		66EA49AC2C783A70006C8CD3 /* DocScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA49AB2C783A70006C8CD3 /* DocScannerView.swift */; };
+		66EDA4FE2C7C877500DCFA85 /* CropperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EDA4FD2C7C877500DCFA85 /* CropperView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +52,7 @@
 /* Begin PBXFileReference section */
 		66081BC42C79BA330059A37E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		66081BC62C79BB420059A37E /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
-		66081BC82C79BB4E0059A37E /* CropperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropperView.swift; sourceTree = "<group>"; };
+		66081BC82C79BB4E0059A37E /* CropperListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropperListView.swift; sourceTree = "<group>"; };
 		66081BCA2C79BB710059A37E /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
 		66081BCC2C79BD4D0059A37E /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		66081BD12C79CD700059A37E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -72,6 +75,7 @@
 		66EA49A52C77AF7C006C8CD3 /* UILauncScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UILauncScreen.storyboard; sourceTree = "<group>"; };
 		66EA49A72C77B196006C8CD3 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		66EA49AB2C783A70006C8CD3 /* DocScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocScannerView.swift; sourceTree = "<group>"; };
+		66EDA4FD2C7C877500DCFA85 /* CropperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropperView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				662F1A792C79DFFA005A9367 /* TOCropViewController in Frameworks */,
+				662F1A772C79DFFA005A9367 /* CropViewController in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +120,8 @@
 				668777C42C779FB400EC905A /* ScannerApp.swift */,
 				66EA49A72C77B196006C8CD3 /* LandingView.swift */,
 				66EA49AB2C783A70006C8CD3 /* DocScannerView.swift */,
-				66081BC82C79BB4E0059A37E /* CropperView.swift */,
+				66081BC82C79BB4E0059A37E /* CropperListView.swift */,
+				66EDA4FD2C7C877500DCFA85 /* CropperView.swift */,
 				66081BC62C79BB420059A37E /* FilterView.swift */,
 				66081BCA2C79BB710059A37E /* ExportView.swift */,
 			);
@@ -226,6 +233,10 @@
 			dependencies = (
 			);
 			name = Scanner;
+			packageProductDependencies = (
+				662F1A762C79DFFA005A9367 /* CropViewController */,
+				662F1A782C79DFFA005A9367 /* TOCropViewController */,
+			);
 			productName = Scanner;
 			productReference = 668777C12C779FB400EC905A /* Scanner.app */;
 			productType = "com.apple.product-type.application";
@@ -298,6 +309,9 @@
 				Base,
 			);
 			mainGroup = 668777B82C779FB400EC905A;
+			packageReferences = (
+				662F1A752C79DFFA005A9367 /* XCRemoteSwiftPackageReference "TOCropViewController" */,
+			);
 			productRefGroup = 668777C22C779FB400EC905A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -345,7 +359,7 @@
 			files = (
 				66081BC72C79BB420059A37E /* FilterView.swift in Sources */,
 				66EA49A82C77B196006C8CD3 /* LandingView.swift in Sources */,
-				66081BC92C79BB4E0059A37E /* CropperView.swift in Sources */,
+				66081BC92C79BB4E0059A37E /* CropperListView.swift in Sources */,
 				66EA49A32C77A87B006C8CD3 /* Color.swift in Sources */,
 				66081BCD2C79BD4D0059A37E /* Page.swift in Sources */,
 				66081BC52C79BA330059A37E /* Coordinator.swift in Sources */,
@@ -353,6 +367,7 @@
 				66081BD22C79CD700059A37E /* HeaderView.swift in Sources */,
 				66EA49AC2C783A70006C8CD3 /* DocScannerView.swift in Sources */,
 				668777C52C779FB400EC905A /* ScannerApp.swift in Sources */,
+				66EDA4FE2C7C877500DCFA85 /* CropperView.swift in Sources */,
 				662F1A712C79D1DE005A9367 /* PrimaryBtnView.swift in Sources */,
 				66EA49A12C77A781006C8CD3 /* Font.swift in Sources */,
 			);
@@ -719,6 +734,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		662F1A752C79DFFA005A9367 /* XCRemoteSwiftPackageReference "TOCropViewController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TimOliver/TOCropViewController";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		662F1A762C79DFFA005A9367 /* CropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 662F1A752C79DFFA005A9367 /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = CropViewController;
+		};
+		662F1A782C79DFFA005A9367 /* TOCropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 662F1A752C79DFFA005A9367 /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = TOCropViewController;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 668777B92C779FB400EC905A /* Project object */;
 }

@@ -14,7 +14,7 @@ class Coordinator: ObservableObject {
     func view(for page: Page) -> some View {
         switch page {
         case .cropper(let images):
-            CropperView(images: images)
+            CropperListView(images: images)
         case .filter(let images):
             FilterView()
         case .export(let images):

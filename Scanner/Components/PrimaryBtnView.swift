@@ -26,7 +26,6 @@ struct PrimaryBtnView: View {
                     endPoint: .trailing
                 ))
                 .cornerRadius(30)
-                .padding()
         }
     }
 }
